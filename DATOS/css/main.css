@@ -1349,4 +1349,39 @@ body {
           animation-play-state: paused !important;
 }/*# sourceMappingURL=main.css.map */
 
+.dedicatoria {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #FFD700; /* Amarillo dorado */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 15px 25px;
+    border-radius: 10px;
+    max-width: 80%;
+    line-height: 1.5;
+    z-index: 1000;
+}
 
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .dedicatoria {
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+        padding: 10px 15px; /* Reducir el padding */
+        max-width: 90%; /* Aumentar el ancho máximo */
+        bottom: 10px; /* Ajustar la posición inferior */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (ej: smartphones pequeños) */
+@media (max-width: 480px) {
+    .dedicatoria {
+        font-size: 14px; /* Fuente aún más pequeña */
+        padding: 8px 12px; /* Padding más reducido */
+        max-width: 95%; /* Ocupar casi toda la pantalla */
+        bottom: 5px; /* Más cerca del borde inferior */
+    }
+}
